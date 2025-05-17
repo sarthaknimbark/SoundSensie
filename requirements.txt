@@ -8,4 +8,3 @@ streamlit
 librosa==0.10.1
 plotly
 streamlit-option-menu
-
