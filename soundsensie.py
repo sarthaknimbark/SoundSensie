@@ -108,7 +108,7 @@ with st.sidebar:
     selected = option_menu(
         menu_title="SoundSensie",
         options=["Home", "Prediction", "About Project"],
-        icons=["house", "music", "info-circle"],
+        icons=["house", "🎼", "info-circle"],
         menu_icon="headphones",
         default_index=0
     )
@@ -154,8 +154,8 @@ elif selected == "Prediction":
                     if X_test is not None:
                         result_index = model_prediction(X_test)
                         if result_index is not None:
-                            label = ['blues', 'classical', 'country', 'disco', 'hiphop', 'jazz',
-                                     'metal', 'pop', 'reggae', 'rock']
+                            label = ['Blues', 'Classical', 'Country', 'Disco', 'Hiphop', 'Jazz', 'Metal', 'Pop', 'Reggae', 'Rock']
+]
                             st.balloons()
                             st.markdown(f"<h3 style='color:#FF4B4B;'>🎵 Predicted Genre: <em>{label[result_index]}</em></h3>", unsafe_allow_html=True)
 
