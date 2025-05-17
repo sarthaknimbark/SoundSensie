@@ -155,7 +155,6 @@ elif selected == "Prediction":
                         result_index = model_prediction(X_test)
                         if result_index is not None:
                             label = ['Blues', 'Classical', 'Country', 'Disco', 'Hiphop', 'Jazz', 'Metal', 'Pop', 'Reggae', 'Rock']
-]
                             st.balloons()
                             st.markdown(f"<h3 style='color:#FF4B4B;'>🎵 Predicted Genre: <em>{label[result_index]}</em></h3>", unsafe_allow_html=True)
 
