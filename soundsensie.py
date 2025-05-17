@@ -117,7 +117,7 @@ with st.sidebar:
 if selected == "Home":
     st.markdown("<h1 style='text-align: center;'>🎵 Welcome to SoundSensie</h1>", unsafe_allow_html=True)
     
-    # Path to your image file (adjust if needed)
+    # Get path to image relative to current script file
     img_path = os.path.join(os.path.dirname(__file__), "music_genre_home.png")
     
     if os.path.exists(img_path):
