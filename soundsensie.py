@@ -116,7 +116,7 @@ with st.sidebar:
 # ========== PAGE: HOME ==========
 if selected == "Home":
     st.markdown("<h1 style='text-align: center;'>🎵 Welcome to SoundSensie</h1>", unsafe_allow_html=True)
-    st.image("music_genre_home.png", use_container_width=True)
+    st.image("music_genre_home.png")
     st.markdown("""
     <div style='text-align: center;'>
         <p><strong>SoundSensie</strong> is a powerful music genre classifier.</p>
