@@ -7,6 +7,6 @@ services:
   plan: free
   region: oregon
   buildCommand: pip install -r requirements.txt
-  startCommand: streamlit run soundsensie.py --server.port=8501 --server.address=0.0.0.0
+  startCommand: streamlit run soundsensie.py --server.port=$PORT --server.address=0.0.0.0
   autoDeployTrigger: commit
 version: "1"
