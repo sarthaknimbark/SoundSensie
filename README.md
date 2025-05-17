@@ -5,3 +5,11 @@ SoundSensie is a deep learning-based web application that classifies music track
 > 🎸 Blues, 🎼 Classical, 🤠 Country, 💃 Disco, 🎤 Hip-Hop, 🎷 Jazz, 🤘 Metal, 🎧 Pop, 🌴 Reggae, 🎸 Rock
 
 ---
+## 🔍 Features
+
+- 🎧 Upload `.mp3` or `.wav` music files
+- 🧠 Converts audio into mel-spectrograms using Librosa
+- 🧩 Splits audio into overlapping chunks for better prediction
+- 🤖 Predicts genre using a TensorFlow CNN model
+- 📊 Real-time genre prediction and visual feedback
+- 💡 Clean, responsive Streamlit UI with audio playback support
