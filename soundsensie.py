@@ -108,7 +108,7 @@ with st.sidebar:
     selected = option_menu(
         menu_title="SoundSensie",
         options=["Home", "Prediction", "About Project"],
-        icons=["house", "🎼", "info-circle"],
+        icons=["house", "headphones", "info-circle"],
         menu_icon="headphones",
         default_index=0
     )
