@@ -1,0 +1,12 @@
+# Exported from Render on 2025-05-17T07:35:42Z
+services:
+- type: web
+  name: soundsensie
+  runtime: python
+  repo: https://github.com/sarthaknimbark/SoundSensie
+  plan: free
+  region: oregon
+  buildCommand: pip install -r requirements.txt runtime.txt
+  startCommand: streamlit run soundsensie.py
+  autoDeployTrigger: commit
+version: "1"
