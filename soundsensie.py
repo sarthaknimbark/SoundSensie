@@ -114,11 +114,6 @@ with st.sidebar:
     )
 
 # ========== PAGE: HOME ==========
-import os
-import streamlit as st
-
-# ... (rest of your code)
-
 if selected == "Home":
     st.markdown("<h1 style='text-align: center;'>🎵 Welcome to SoundSensie</h1>", unsafe_allow_html=True)
     
