@@ -1,12 +1,14 @@
 # Exported from Render on 2025-05-17T07:35:42Z
 services:
-- type: web
-  name: soundsensie
-  runtime: python
-  repo: https://github.com/sarthaknimbark/SoundSensie
-  plan: free
-  region: oregon
-  buildCommand: pip install -r requirements.txt
-  startCommand: streamlit run soundsensie.py --server.port=$PORT --server.address=0.0.0.0
-  autoDeployTrigger: commit
+  - type: web
+    name: soundsensie
+    runtime: python
+    repo: https://github.com/sarthaknimbark/SoundSensie
+    plan: free
+    region: oregon
+    buildCommand: pip install -r requirements.txt
+    startCommand: streamlit run soundsensie.py --server.port=$PORT --server.address=0.0.0.0
+    autoDeployTrigger: commit
+    build:
+      pythonVersion: 3.10
 version: "1"
