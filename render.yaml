@@ -6,7 +6,7 @@ services:
   repo: https://github.com/sarthaknimbark/SoundSensie
   plan: free
   region: oregon
-  buildCommand: pip install -r requirements.txt runtime.txt
+  buildCommand: pip install -r requirements.txt
   startCommand: streamlit run soundsensie.py
   autoDeployTrigger: commit
 version: "1"
