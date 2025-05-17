@@ -6,7 +6,6 @@ import os
 from tensorflow.image import resize
 from streamlit_option_menu import option_menu
 import plotly.express as px
-from PIL import Image
 
 # ========== CONFIG ==========
 st.set_page_config(page_title="SoundSensie | Genre Classifier", page_icon="🎧", layout="wide")
@@ -109,7 +108,7 @@ with st.sidebar:
     selected = option_menu(
         menu_title="SoundSensie",
         options=["Home", "Prediction", "About Project"],
-        icons=["house", "headphones", "info-circle"],
+        icons=["house", "music", "info-circle"],
         menu_icon="headphones",
         default_index=0
     )
@@ -117,18 +116,7 @@ with st.sidebar:
 # ========== PAGE: HOME ==========
 if selected == "Home":
     st.markdown("<h1 style='text-align: center;'>🎵 Welcome to SoundSensie</h1>", unsafe_allow_html=True)
-    
-    img_path = os.path.join(os.path.dirname(__file__), "music_genre_home.png")
-    
-    if os.path.exists(img_path):
-        try:
-            img = Image.open(img_path)
-            st.image(img, use_container_width=True)
-        except Exception as e:
-            st.warning(f"⚠️ Failed to load image: {e}")
-    else:
-        st.warning("⚠️ Image file 'music_genre_home.png' not found. Please check your file path or upload the image.")
-    
+    st.image("music_genre_home.png", use_container_width=True)
     st.markdown("""
     <div style='text-align: center;'>
         <p><strong>SoundSensie</strong> is a powerful music genre classifier.</p>
